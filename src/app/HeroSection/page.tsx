@@ -2,6 +2,8 @@
 
 import Image from 'next/image';
 import React from 'react';
+import { HiDownload } from 'react-icons/hi';
+import { FaGithub, FaLinkedin, FaWhatsapp } from 'react-icons/fa';
 
 const Hero = () => {
   return (
@@ -21,25 +23,28 @@ const Hero = () => {
         <div className="flex space-x-4">
           <button className="flex items-center space-x-2 bg-[#9333EA] hover:bg-purple-700 transition text-white px-6 py-3 rounded-full">
             <span>Resume</span>
-            <svg xmlns="http://www.w3.org/2000/svg" className="h-4 w-4" fill="none" viewBox="0 0 24 24" stroke="currentColor">
-              <path strokeLinecap="round" strokeLinejoin="round" strokeWidth="2" d="M19 14l-7 7m0 0l-7-7m7 7V3" />
-            </svg>
+            <HiDownload/>
+          
           </button>
           
           {/* Social icons */}
           <div className="flex space-x-3">
-            <a href="#" className="flex items-center justify-center w-10 h-10 rounded-full border border-[#9333EA] text-[#9333EA] hover:bg-[#9333EA] hover:text-white transition">
-              <span>1</span>
+            <a href="#" className="flex items-center justify-center w-10 h-10 rounded-full border border-[#9333EA]   hover:text-white transition">
+              <span>
+                <FaGithub/>
+              </span>
             </a>
-            <a href="#" className="flex items-center justify-center w-10 h-10 rounded-full border border-[#9333EA] text-[#9333EA] hover:bg-[#9333EA] hover:text-white transition">
-              <span>2</span>
+            <a href="#" className="flex items-center justify-center w-10 h-10 rounded-full border border-[#9333EA]   hover:text-white transition">
+              <span>
+                <FaLinkedin/>
+              </span>
             </a>
-            <a href="#" className="flex items-center justify-center w-10 h-10 rounded-full border border-[#9333EA] text-[#9333EA] hover:bg-[#9333EA] hover:text-white transition">
-              <span>3</span>
+            <a href="#" className="flex items-center justify-center w-10 h-10 rounded-full border border-[#9333EA]  hover:text-white transition">
+              <span>
+                <FaWhatsapp/>
+              </span>
             </a>
-            <a href="#" className="flex items-center justify-center w-10 h-10 rounded-full border border-[#9333EA] text-[#9333EA] hover:bg-[#9333EA] hover:text-white transition">
-              <span>4</span>
-            </a>
+          
           </div>
         </div>
       </div>
