@@ -29,17 +29,17 @@ const Hero = () => {
           
           {/* Social icons */}
           <div className="flex space-x-3">
-            <a href="#" className="flex items-center justify-center w-10 h-10 rounded-full border border-[#9333EA]   hover:text-white transition">
+            <a href="https://github.com/Tanaka878" className="flex items-center justify-center w-10 h-10 rounded-full border border-[#9333EA]   hover:text-white transition">
               <span>
                 <FaGithub/>
               </span>
             </a>
-            <a href="#" className="flex items-center justify-center w-10 h-10 rounded-full border border-[#9333EA]   hover:text-white transition">
+            <a href="https://www.linkedin.com/in/tanaka-musungare-26668a295/" className="flex items-center justify-center w-10 h-10 rounded-full border border-[#9333EA]   hover:text-white transition">
               <span>
                 <FaLinkedin/>
               </span>
             </a>
-            <a href="#" className="flex items-center justify-center w-10 h-10 rounded-full border border-[#9333EA]  hover:text-white transition">
+            <a href="" className="flex items-center justify-center w-10 h-10 rounded-full border border-[#9333EA]  hover:text-white transition">
               <span>
                 <FaWhatsapp/>
               </span>
