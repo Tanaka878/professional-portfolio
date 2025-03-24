@@ -3,8 +3,18 @@ import Image from "next/image";
 import { FaGithub } from "react-icons/fa";
 import { FiExternalLink } from "react-icons/fi";
 
-// Reusable Project Card Component
-const ProjectCard = ({ title, description, tags, image, github, liveDemo }: any) => (
+// Define proper interface instead of using 'any'
+interface ProjectCardProps {
+  title: string;
+  description: string;
+  tags: string[];
+  image: string;
+  github?: string; // Optional
+  liveDemo?: string; // Optional
+}
+
+// Reusable Project Card Component with proper typing
+const ProjectCard = ({ title, description, tags, image, github, liveDemo }: ProjectCardProps) => (
   <div className="border border-white shadow-lg shadow-white/30 rounded-lg p-6 bg-dark-blue text-white">
     {/* Image */}
     <div className="relative w-full h-40 mb-4">
