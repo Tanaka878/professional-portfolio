@@ -1,3 +1,4 @@
+import Contact from "./Contact/page";
 import Hero from "./HeroSection/page";
 import NavBar from "./NavBar/page";
 import Projects from "./Projects/page";
@@ -17,6 +18,9 @@ export default function Home() {
 
       {/**Skills Section */}
       <Skills/>
+
+      {/**Contact Me */}
+      <Contact/>
     </div>
   );
 }
