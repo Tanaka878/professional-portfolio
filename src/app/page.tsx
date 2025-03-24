@@ -1,6 +1,7 @@
 import Hero from "./HeroSection/page";
 import NavBar from "./NavBar/page";
 import Projects from "./Projects/page";
+import Skills from "./Skills/page";
 
 export default function Home() {
   return (
@@ -13,6 +14,9 @@ export default function Home() {
 
       {/* Projects Section */}
       <Projects />
+
+      {/**Skills Section */}
+      <Skills/>
     </div>
   );
 }
