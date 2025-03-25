@@ -3,6 +3,7 @@ import Hero from "./HeroSection/page";
 import NavBar from "./NavBar/page";
 import Projects from "./Projects/page";
 import Skills from "./Skills/page";
+import Testimonials from "./Testimonials/page";
 
 export default function Home() {
   return (
@@ -18,6 +19,9 @@ export default function Home() {
 
       {/**Skills Section */}
       <Skills/>
+
+      {/**Testimonials */}
+      <Testimonials/>
 
       {/**Contact Me */}
       <Contact/>

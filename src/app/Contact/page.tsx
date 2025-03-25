@@ -11,7 +11,7 @@ const Contact = () => {
       <div className="flex flex-wrap justify-center gap-6 mb-8">
         {/* Email */}
         <a
-          href="mailto:your-email@example.com"
+          href="mailto:musungaretanaka@gmail.com"
           target="_blank"
           rel="noopener noreferrer"
           className="flex items-center gap-2 text-white text-lg hover:text-purple-400 transition"
