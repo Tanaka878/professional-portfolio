@@ -2,8 +2,17 @@
 import React from 'react';
 import Image from 'next/image';
 
-const Testimonials = () => {
-  const testimonials = [
+// Define the type for a single testimonial
+interface Testimonial {
+  text: string;
+  image: string;
+  name: string;
+  title: string;
+  rating: 1 | 2 | 3 | 4 | 5; // Explicitly define rating as 1-5
+}
+
+const Testimonials: React.FC = () => {
+  const testimonials: Testimonial[] = [
     {
       text: "Working with [Your Name] was an incredible experience. Their attention to detail and problem-solving skills are truly exceptional. They consistently deliver high-quality work that exceeds expectations.",
       image: '/Images/java.png',
@@ -27,11 +36,8 @@ const Testimonials = () => {
     }
   ];
 
-  // Triple the testimonials to ensure smooth infinite scroll
-  const displayTestimonials = [...testimonials, ...testimonials, ...testimonials];
-
-  // Star rating component
-  const StarRating = ({ rating }) => (
+  // Star rating component with type-safe props
+  const StarRating: React.FC<{ rating: 1 | 2 | 3 | 4 | 5 }> = ({ rating }) => (
     <div className="flex text-yellow-400 mb-2">
       {[...Array(5)].map((_, index) => (
         <svg 
@@ -45,6 +51,9 @@ const Testimonials = () => {
       ))}
     </div>
   );
+
+  // Triple the testimonials to ensure smooth infinite scroll
+  const displayTestimonials = [...testimonials, ...testimonials, ...testimonials];
 
   return (
     <div className="bg-[#0F172A] py-16 relative overflow-hidden">
