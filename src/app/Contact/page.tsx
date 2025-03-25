@@ -31,7 +31,7 @@ const Contact = () => {
 
         {/* GitHub */}
         <a
-          href="https://github.com/your-profile"
+          href="https://github.com/Tanaka878"
           target="_blank"
           rel="noopener noreferrer"
           className="flex items-center gap-2 text-white text-lg hover:text-purple-400 transition"

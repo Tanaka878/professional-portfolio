@@ -1,4 +1,5 @@
 import Contact from "./Contact/page";
+import Footer from "./Footer/page";
 import Hero from "./HeroSection/page";
 import NavBar from "./NavBar/page";
 import Projects from "./Projects/page";
@@ -25,6 +26,9 @@ export default function Home() {
 
       {/**Contact Me */}
       <Contact/>
+
+      {/**Footer */}
+      <Footer/>
     </div>
   );
 }
