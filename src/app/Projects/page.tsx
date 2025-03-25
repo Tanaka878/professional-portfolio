@@ -66,26 +66,44 @@ const Projects = () => {
         <ProjectCard
           title="Community Forum"
           description="A group chat application to connect people with shared interests."
-          tags={["#java", "#next.js"]}
-          image="/Images/naruto.jpeg"
-          github="https://github.com"
-          liveDemo="https://example.com"
+          tags={["#java", "#next.js","#mongodb",]}
+          image="/Images/phone.png"
+          github="https://github.com/Tanaka878/CommunityForumApp"
+          liveDemo="https://www.community-forum.co.zw/"
         />
         <ProjectCard
-          title="E-Commerce Platform"
-          description="An online store with full e-commerce functionality."
+          title="Online Banking Platform"
+          description="A web app that simulates the operations of a banking platform"
           tags={["#react", "#node.js"]}
-          image="/Images/naruto.jpeg"
-          github="https://github.com"
-          liveDemo="https://example.com"
+          image="/Images/bankingDashboard.png"
+          github="https://github.com/Tanaka878/Front-End"
+          liveDemo="https://front-end-gray-one.vercel.app/"
         />
         <ProjectCard
-          title="Weather App"
-          description="A simple weather app providing live weather updates."
-          tags={["#typescript", "#api"]}
-          image="/Images/naruto.jpeg"
-          github="https://github.com"
-          liveDemo="https://example.com"
+          title="My Portfolio Website"
+          description="A website that showcases my skills that i have and projects that i have worked on"
+          tags={["#typescript", "#UI/UX"]}
+          image="/Images/portfolio.png"
+          github="https://github.com/Tanaka878/professional-portfolio"
+          liveDemo="https://tanaka-musungare.vercel.app/"
+        />
+
+        <ProjectCard
+          title="JOINAI SUPPORT SYSTEM"
+          description="An online ticketing system enriched with AI for effective and effecient customer support"
+          tags={["#typescript","#SPRING-AI","Java", "#UI/UX"]}
+          image="/Images/marketing.jpg"
+          github="https://github.com/Tanaka878/professional-portfolio"
+          liveDemo="https://tanaka-musungare.vercel.app/"
+        />
+
+        <ProjectCard
+          title="My First Website"
+          description="A website that showcases my skills that i have and projects that i have worked on"
+          tags={["#HTML","#CSS", "#UI/UX"]}
+          image="/Images/first website.png"
+          github="https://github.com/Tanaka878/MyPortfolio"
+          liveDemo="https://my-portfolio-smoky-xi-97.vercel.app/"
         />
       </div>
     </section>

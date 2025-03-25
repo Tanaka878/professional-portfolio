@@ -8,7 +8,7 @@ const Skills = () => {
     { src: "/Images/javascript.png", alt: "JavaScript" },
     { src: "/Images/mysql.png", alt: "MySQL" },
     { src: "/Images/next.js.png", alt: "Next.js" },
-    { src: "/Images/node.js", alt: "Node.js" },
+    { src: "/Images/node.js.png", alt: "Node.js" },
     { src: "/Images/react.png", alt: "React" },
     { src: "/Images/typescript.png", alt: "TypeScript" },
   ];
