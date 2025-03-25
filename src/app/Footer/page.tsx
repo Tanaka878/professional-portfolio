@@ -5,7 +5,7 @@ const Footer = () => {
     <footer className="bg-dark-blue text-white py-6">
       <div className="container mx-auto flex flex-col md:flex-row justify-between items-center">
         <div className="text-center md:text-left mb-4 md:mb-0">
-          <h2 className="text-xl font-semibold">Your Name</h2>
+          <h2 className="text-xl font-semibold">Tanaka Musungare</h2>
           <p className="text-sm">© {new Date().getFullYear()} All Rights Reserved</p>
         </div>
         <div className="flex space-x-4">
