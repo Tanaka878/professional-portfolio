@@ -22,16 +22,16 @@ const Testimonials: React.FC = () => {
     },
     {
       text: "I've collaborated with many professionals, but Tanaka's commitment to excellence stands out. Their innovative approach and ability to tackle complex challenges made our project a huge success.",
-      image: '/Images/java.png',
-      name: 'John Smith',
-      title: 'CTO, Digital Solutions LLC',
+      image: '/Images/headshot2.jpeg',
+      name: 'Mark',
+      title: 'Freelancer',
       rating: 5
     },
     {
       text: "Exceptional communication, technical expertise, and a proactive mindset. Tanaka doesn't just complete tasks; they elevate the entire project with their strategic thinking and creativity.",
-      image: '/Images/java.png',
-      name: 'Emily Chen',
-      title: 'Lead Engineer, Startup Accelerator',
+      image: '/Images/headshot3.jpeg',
+      name: 'Blessing Katupira',
+      title: 'MSU Student',
       rating: 5
     }
   ];
