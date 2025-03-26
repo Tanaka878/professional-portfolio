@@ -12,12 +12,7 @@ interface ProjectCardProps {
   liveDemo?: string;
 }
 
-interface ProjectProps {
-  red: string;
-  blue: string;
-  yellow: string;
-  green: string;
-}
+
 
 const ProjectCard = ({ title, description, tags, image, github, liveDemo }: ProjectCardProps) => {
   const tagColors: Record<string, string> = {
@@ -87,7 +82,7 @@ const ProjectCard = ({ title, description, tags, image, github, liveDemo }: Proj
   );
 };
 
-const Projects: React.FC<ProjectProps> = ({  }) => {
+const Projects = () => {
   const colors = {
     red: "#fc0320",
     yellow: "#fcf003",
