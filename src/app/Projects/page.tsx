@@ -74,7 +74,7 @@ const Projects = () => {
         <ProjectCard
           title="Online Banking Platform"
           description="A web app that simulates the operations of a banking platform"
-          tags={["#react", "#node.js"]}
+          tags={["#react", "#node.js","#JAVA"]}
           image="/Images/bankingDashboard.png"
           github="https://github.com/Tanaka878/Front-End"
           liveDemo="https://front-end-gray-one.vercel.app/"
@@ -91,7 +91,7 @@ const Projects = () => {
         <ProjectCard
           title="JOINAI SUPPORT SYSTEM"
           description="An online ticketing system enriched with AI for effective and effecient customer support. DEMO AVAILABLE ON REQUEST"
-          tags={["#typescript","#SPRING-AI","Java", "#UI/UX"]}
+          tags={["#typescript","#SPRING-AI","#Java", "#UI/UX","#Next.js"]}
           image="/Images/marketing.jpg"
           github="https://github.com/Tanaka878/professional-portfolio"
           liveDemo="https://tanaka-musungare.vercel.app/"
