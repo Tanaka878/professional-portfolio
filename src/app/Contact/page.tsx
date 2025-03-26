@@ -16,7 +16,7 @@ const Contact = () => {
           rel="noopener noreferrer"
           className="flex items-center gap-2 text-white text-lg hover:text-purple-400 transition"
         >
-          <MdEmail size={24} href="mailto:musungaretanaka@gmail.com"/> 
+          <MdEmail size={24} href="mailto:musungaretanaka@gmail.com"/>  <span>Email</span>
         </a>
 
         {/* LinkedIn */}
