@@ -14,21 +14,21 @@ interface Testimonial {
 const Testimonials: React.FC = () => {
   const testimonials: Testimonial[] = [
     {
-      text: "Working with [Your Name] was an incredible experience. Their attention to detail and problem-solving skills are truly exceptional. They consistently deliver high-quality work that exceeds expectations.",
-      image: '/Images/java.png',
-      name: 'Jane Doe',
-      title: 'Senior Product Manager, Tech Innovations Inc.',
-      rating: 5
+      text: "Working with Tanaka was an incredible experience. Their attention to detail and problem-solving skills are truly exceptional. They consistently deliver high-quality work that exceeds expectations.",
+      image: '/Images/headshot1.jpeg',
+      name: 'Tafadzwa Murwira',
+      title: 'Entreprenuer',
+      rating: 4
     },
     {
-      text: "I've collaborated with many professionals, but [Your Name]'s commitment to excellence stands out. Their innovative approach and ability to tackle complex challenges made our project a huge success.",
+      text: "I've collaborated with many professionals, but Tanaka's commitment to excellence stands out. Their innovative approach and ability to tackle complex challenges made our project a huge success.",
       image: '/Images/java.png',
       name: 'John Smith',
       title: 'CTO, Digital Solutions LLC',
       rating: 5
     },
     {
-      text: "Exceptional communication, technical expertise, and a proactive mindset. [Your Name] doesn't just complete tasks; they elevate the entire project with their strategic thinking and creativity.",
+      text: "Exceptional communication, technical expertise, and a proactive mindset. Tanaka doesn't just complete tasks; they elevate the entire project with their strategic thinking and creativity.",
       image: '/Images/java.png',
       name: 'Emily Chen',
       title: 'Lead Engineer, Startup Accelerator',
