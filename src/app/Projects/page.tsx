@@ -3,17 +3,17 @@ import Image from "next/image";
 import { FaGithub } from "react-icons/fa";
 import { FiExternalLink } from "react-icons/fi";
 
-// Define proper interface instead of using 'any'
+
 interface ProjectCardProps {
   title: string;
   description: string;
   tags: string[];
   image: string;
-  github?: string; // Optional
-  liveDemo?: string; // Optional
+  github?: string; 
+  liveDemo?: string; 
 }
 
-// Reusable Project Card Component with proper typing
+
 const ProjectCard = ({ title, description, tags, image, github, liveDemo }: ProjectCardProps) => (
   <div className="border border-white shadow-lg shadow-white/30 rounded-lg p-6 bg-dark-blue text-white">
     {/* Image */}
@@ -57,7 +57,7 @@ const ProjectCard = ({ title, description, tags, image, github, liveDemo }: Proj
   </div>
 );
 
-// Projects Component
+
 const Projects = () => {
   return (
     <section className="w-full max-w-6xl mx-auto">
@@ -90,7 +90,7 @@ const Projects = () => {
 
         <ProjectCard
           title="JOINAI SUPPORT SYSTEM"
-          description="An online ticketing system enriched with AI for effective and effecient customer support"
+          description="An online ticketing system enriched with AI for effective and effecient customer support. DEMO AVAILABLE ON REQUEST"
           tags={["#typescript","#SPRING-AI","Java", "#UI/UX"]}
           image="/Images/marketing.jpg"
           github="https://github.com/Tanaka878/professional-portfolio"
