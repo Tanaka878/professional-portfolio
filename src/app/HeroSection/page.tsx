@@ -23,7 +23,9 @@ const Hero = () => {
         <div className="flex space-x-4">
           <button className="flex items-center space-x-2 bg-[#9333EA] hover:bg-purple-700 transition text-white px-6 py-3 rounded-full">
             <span>Resume</span>
+            <a href="https://drive.google.com/file/d/1A7rTR8Mf9xcXb61loFb3KwZtS0DP-2LF/view?usp=drive_link">
             <HiDownload/>
+            </a>
           
           </button>
           

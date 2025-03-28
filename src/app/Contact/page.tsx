@@ -21,8 +21,8 @@ const Contact = () => {
 
         {/* LinkedIn */}
         <a
-          href="https://www.linkedin.com/in/your-profile"
-          target="_blank"
+            href="https://www.linkedin.com/in/tanaka-musungare-26668a295/"
+            target="_blank"
           rel="noopener noreferrer"
           className="flex items-center gap-2 text-white text-lg hover:text-purple-400 transition"
         >
@@ -41,7 +41,7 @@ const Contact = () => {
 
         {/* WhatsApp */}
         <a
-          href="https://wa.me/your-phone-number"
+          href="https://wa.me/263780001324"
           target="_blank"
           rel="noopener noreferrer"
           className="flex items-center gap-2 text-white text-lg hover:text-purple-400 transition"

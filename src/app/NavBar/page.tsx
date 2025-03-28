@@ -6,9 +6,9 @@ const NavBar = () => {
   const [isModalOpen, setIsModalOpen] = useState(false);
 
   const menuItems = [
-    { name: 'Services', href: '#services' },
-    { name: 'Skills', href: '#skills' },
     { name: 'Projects', href: '#projects' },
+    { name: 'Skills', href: '#skills' },
+    { name: 'Services', href: '#services' },
     { name: 'Testimonials', href: '#testimonials' },
     { name: 'Contact', href: '#contact' }
   ];
