@@ -135,6 +135,15 @@ const Projects = () => {
           github="https://github.com/Tanaka878/MyPortfolio"
           liveDemo="https://my-portfolio-smoky-xi-97.vercel.app/"
         />
+
+<ProjectCard
+          title="Design Patterns"
+          description="A repository that i use for referrals when i do system design to write clean and more scalable and maintanable code"
+          tags={["#java"]}
+          image="/Images/phone.png"
+          github="https://github.com/Tanaka878/Design-Patterns"
+          liveDemo=""
+        />
       </div>
     </section>
   );
