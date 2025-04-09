@@ -125,7 +125,7 @@ const Projects = () => {
           tags={["#typescript", "#SPRING-AI", "#Java", "#UI/UX", "#Next.js"]}
           image="/Images/marketing.jpg"
           github="https://github.com/Tanaka878/joinai-support-dashboard"
-          liveDemo="https://www.google.com/"
+          liveDemo="https://joinai-support-dashboard.vercel.app/"
         />
         <ProjectCard
           title="My First Website"
