@@ -5,12 +5,12 @@ const Skills = () => {
   const skills = [
     { src: "/Images/mongo.png", alt: "MongoDB" },
     { src: "/Images/java.png", alt: "Java" },
-    { src: "/Images/javascript.png", alt: "JavaScript" },
+    { src: "/Images/docker.png", alt: "Docker" },
     { src: "/Images/mysql.png", alt: "MySQL" },
     { src: "/Images/next.js.png", alt: "Next.js" },
-    { src: "/Images/node.js.png", alt: "Node.js" },
+    { src: "/Images/kubernetes.png", alt: "Kubernetes" },
     { src: "/Images/react.png", alt: "React" },
-    { src: "/Images/typescript.png", alt: "TypeScript" },
+    { src: "/Images/jenkins.png", alt: "Jenkins" },
   ];
 
   return (
