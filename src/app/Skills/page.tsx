@@ -14,7 +14,7 @@ const Skills = () => {
   ];
 
   return (
-    <div className="w-full max-w-6xl mx-auto py-12 px-4">
+    <div id="skills" className="w-full max-w-6xl mx-auto py-12 px-4">
       <h2 className="text-3xl font-bold text-center mb-8 text-white">My Skills</h2>
       <div className="grid grid-cols-2 sm:grid-cols-3 md:grid-cols-4 gap-6">
         {skills.map((skill, index) => (

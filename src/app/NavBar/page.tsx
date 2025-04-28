@@ -8,9 +8,8 @@ const NavBar = () => {
   const menuItems = [
     { name: 'Projects', href: '#projects' },
     { name: 'Skills', href: '#skills' },
-    { name: 'Services', href: '#services' },
     { name: 'Testimonials', href: '#testimonials' },
-    { name: 'Contact', href: '#contact' }
+    { name: 'Contact', href: '#contact' },
   ];
 
   const toggleModal = () => {

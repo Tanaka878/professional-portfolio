@@ -53,7 +53,7 @@ const Testimonials: React.FC = () => {
   const displayTestimonials = [...testimonials, ...testimonials, ...testimonials];
 
   return (
-    <div className="bg-[#0F172A] py-16 relative overflow-hidden">
+    <div id="testimonials" className="bg-[#0F172A] py-16 relative overflow-hidden">
       <div className="text-center mb-12">
         <h2 className="text-3xl font-bold text-white mb-4">Client Testimonials</h2>
         <p className="text-xl text-gray-400 max-w-2xl mx-auto">
