@@ -1,7 +1,9 @@
+'use client'; 
 import React from "react";
 import Image from "next/image";
 import { FaGithub } from "react-icons/fa";
 import { FiExternalLink } from "react-icons/fi";
+import { motion } from "framer-motion"; 
 
 interface ProjectCardProps {
   title: string;
@@ -11,8 +13,6 @@ interface ProjectCardProps {
   github?: string;
   liveDemo?: string;
 }
-
-
 
 const ProjectCard = ({ title, description, tags, image, github, liveDemo }: ProjectCardProps) => {
   const tagColors: Record<string, string> = {
@@ -29,7 +29,13 @@ const ProjectCard = ({ title, description, tags, image, github, liveDemo }: Proj
   };
 
   return (
-    <div className="border border-white shadow-lg shadow-white/30 rounded-lg p-6 bg-dark-blue text-white">
+    <motion.div
+      className="border border-white shadow-lg shadow-white/30 rounded-lg p-6 bg-dark-blue text-white"
+      whileHover={{ scale: 1.05 }} // Add hover effect
+      initial={{ opacity: 0, y: 50 }} // Initial animation state
+      animate={{ opacity: 1, y: 0 }} // Final  state
+      transition={{ duration: 0.5 }} //  duration
+    >
       {/* Image */}
       <div className="relative w-full h-40 mb-4">
         <Image
@@ -78,23 +84,42 @@ const ProjectCard = ({ title, description, tags, image, github, liveDemo }: Proj
           </a>
         )}
       </div>
-    </div>
+    </motion.div>
   );
 };
 
 const Projects = () => {
-  const colors = {
-    red: "#fc0320",
-    yellow: "#fcf003",
-    blue: "#036bfc",
-    green: "#68de59",
-  };
-
-  console.log(colors.green);
   return (
-    <section id="projects" className="w-full max-w-6xl mx-auto">
-      <h2 className="text-3xl font-bold text-center mb-8">Projects</h2>
-      <div className="grid grid-cols-1 sm:grid-cols-2 md:grid-cols-2 lg:grid-cols-3 gap-8">
+    <motion.section
+      id="projects"
+      className="w-full max-w-6xl mx-auto"
+      initial={{ opacity: 0 }} // Initial  state
+      animate={{ opacity: 1 }} // Final animation state
+      transition={{ duration: 0.8 }} // Animation duration
+    >
+      <motion.h2
+        className="text-3xl font-bold text-center mb-8"
+        initial={{ opacity: 0, y: -20 }} // Initial animation state
+        animate={{ opacity: 1, y: 0 }} // Final animation state
+        transition={{ duration: 0.6 }} // Animation duration
+      >
+        Projects
+      </motion.h2>
+      <motion.div
+        className="grid grid-cols-1 sm:grid-cols-2 md:grid-cols-2 lg:grid-cols-3 gap-8"
+        initial="hidden"
+        animate="visible"
+        variants={{
+          hidden: { opacity: 0, y: 50 },
+          visible: {
+            opacity: 1,
+            y: 0,
+            transition: {
+              staggerChildren: 0.2, // Stagger animation for child elements
+            },
+          },
+        }}
+      >
         <ProjectCard
           title="Community Forum"
           description="A group chat application to connect people with shared interests."
@@ -135,17 +160,16 @@ const Projects = () => {
           github="https://github.com/Tanaka878/MyPortfolio"
           liveDemo="https://my-portfolio-smoky-xi-97.vercel.app/"
         />
-
-<ProjectCard
+        <ProjectCard
           title="Design Patterns"
-          description="A repository that i use for referrals when i do system design to write clean and more scalable and maintanable code"
+          description="A repository that I use for referrals when I do system design to write clean and more scalable and maintainable code."
           tags={["#java"]}
           image="/Images/phone.png"
           github="https://github.com/Tanaka878/Design-Patterns"
           liveDemo=""
         />
-      </div>
-    </section>
+      </motion.div>
+    </motion.section>
   );
 };
 

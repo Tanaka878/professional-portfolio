@@ -1,11 +1,27 @@
-import React from "react";
+'use client';
+
+import React from 'react';
+import { motion } from 'framer-motion';
 import { FaLinkedin, FaGithub, FaWhatsapp } from "react-icons/fa";
 import { MdEmail } from "react-icons/md";
 
 const Contact = () => {
   return (
-    <section id="contact" className="w-full max-w-4xl mx-auto py-12 px-4">
-      <h2 className="text-3xl font-bold text-center mb-8 text-white">Get in Touch</h2>
+    <motion.section
+      id="contact"
+      className="w-full max-w-4xl mx-auto py-12 px-4"
+      initial={{ opacity: 0 }}
+      animate={{ opacity: 1 }}
+      transition={{ duration: 0.8 }}
+    >
+      <motion.h2
+        className="text-3xl font-bold text-center mb-8 text-white"
+        initial={{ opacity: 0, y: -20 }}
+        animate={{ opacity: 1, y: 0 }}
+        transition={{ duration: 0.6 }}
+      >
+        Get in Touch
+      </motion.h2>
 
       {/* Social Links */}
       <div className="flex flex-wrap justify-center gap-6 mb-8">
@@ -51,65 +67,69 @@ const Contact = () => {
       </div>
 
       {/* Contact Form */}
-      <div className="bg-dark-blue p-6 rounded-lg shadow-lg shadow-purple-500/50">
-        <form className="space-y-6">
-          {/* Name Input */}
-          <div>
-            <label htmlFor="name" className="block text-sm font-medium text-gray-300 mb-1">
-              Your Name
-            </label>
-            <input
-              type="text"
-              id="name"
-              name="name"
-              className="w-full px-4 py-2 bg-gray-800 text-white rounded-lg border border-gray-700 focus:outline-none focus:ring-2 focus:ring-purple-500"
-              placeholder="Enter your name"
-              required
-            />
-          </div>
+      <motion.form
+        className="space-y-6 bg-dark-blue p-6 rounded-lg shadow-lg shadow-purple-500/50"
+        initial={{ opacity: 0, y: 50 }}
+        animate={{ opacity: 1, y: 0 }}
+        transition={{ duration: 0.8 }}
+      >
+        {/* Name Input */}
+        <div>
+          <label htmlFor="name" className="block text-sm font-medium text-gray-300 mb-1">
+            Your Name
+          </label>
+          <input
+            type="text"
+            id="name"
+            name="name"
+            className="w-full px-4 py-2 bg-gray-800 text-white rounded-lg border border-gray-700 focus:outline-none focus:ring-2 focus:ring-purple-500"
+            placeholder="Enter your name"
+            required
+          />
+        </div>
 
-          {/* Email Input */}
-          <div>
-            <label htmlFor="email" className="block text-sm font-medium text-gray-300 mb-1">
-              Your Email
-            </label>
-            <input
-              type="email"
-              id="email"
-              name="email"
-              className="w-full px-4 py-2 bg-gray-800 text-white rounded-lg border border-gray-700 focus:outline-none focus:ring-2 focus:ring-purple-500"
-              placeholder="Enter your email"
-              required
-            />
-          </div>
+        {/* Email Input */}
+        <div>
+          <label htmlFor="email" className="block text-sm font-medium text-gray-300 mb-1">
+            Your Email
+          </label>
+          <input
+            type="email"
+            id="email"
+            name="email"
+            className="w-full px-4 py-2 bg-gray-800 text-white rounded-lg border border-gray-700 focus:outline-none focus:ring-2 focus:ring-purple-500"
+            placeholder="Enter your email"
+            required
+          />
+        </div>
 
-          {/* Message Input */}
-          <div>
-            <label htmlFor="message" className="block text-sm font-medium text-gray-300 mb-1">
-              Your Message
-            </label>
-            <textarea
-              id="message"
-              name="message"
-              rows={4}
-              className="w-full px-4 py-2 bg-gray-800 text-white rounded-lg border border-gray-700 focus:outline-none focus:ring-2 focus:ring-purple-500"
-              placeholder="Type your message here"
-              required
-            />
-          </div>
+        {/* Message Input */}
+        <div>
+          <label htmlFor="message" className="block text-sm font-medium text-gray-300 mb-1">
+            Your Message
+          </label>
+          <textarea
+            id="message"
+            name="message"
+            rows={4}
+            className="w-full px-4 py-2 bg-gray-800 text-white rounded-lg border border-gray-700 focus:outline-none focus:ring-2 focus:ring-purple-500"
+            placeholder="Type your message here"
+            required
+          />
+        </div>
 
-          {/* Submit Button */}
-          <div className="text-center">
-            <button
-              type="submit"
-              className="px-6 py-3 bg-purple-500 text-white font-semibold rounded-lg shadow-md hover:bg-purple-600 transition duration-300"
-            >
-              Send Message
-            </button>
-          </div>
-        </form>
-      </div>
-    </section>
+        {/* Submit Button */}
+        <div className="text-center">
+          <motion.button
+            type="submit"
+            className="px-6 py-3 bg-purple-500 text-white font-semibold rounded-lg shadow-md hover:bg-purple-600 transition duration-300"
+            whileHover={{ scale: 1.1 }}
+          >
+            Send Message
+          </motion.button>
+        </div>
+      </motion.form>
+    </motion.section>
   );
 };
 

@@ -1,14 +1,26 @@
-// components/Hero.jsx
+'use client';
 
-import Image from 'next/image';
 import React from 'react';
+import { motion } from 'framer-motion';
+import Image from 'next/image';
 import { HiDownload } from 'react-icons/hi';
 import { FaGithub, FaLinkedin, FaWhatsapp } from 'react-icons/fa';
 
 const Hero = () => {
   return (
-    <div className="flex flex-col md:flex-row items-center py-12">
-      <div className="w-full md:w-1/2 mb-10 md:mb-0">
+    <motion.section
+      className="flex flex-col md:flex-row items-center py-12"
+      initial={{ opacity: 0 }}
+      animate={{ opacity: 1 }}
+      transition={{ duration: 0.8 }}
+    >
+      {/* Text Section */}
+      <motion.div
+        className="w-full md:w-1/2 mb-10 md:mb-0"
+        initial={{ x: -100, opacity: 0 }}
+        animate={{ x: 0, opacity: 1 }}
+        transition={{ duration: 1 }}
+      >
         <p className="text-lg mb-2"> Tanaka Musungare</p>
         <h1 className="text-4xl md:text-5xl font-bold mb-6">
           <span className="text-[#9333EA]">An passionate</span><br/>
@@ -49,10 +61,15 @@ const Hero = () => {
           
           </div>
         </div>
-      </div>
-      
-      {/* Profile image */}
-      <div className="w-full md:w-1/2 flex justify-center">
+      </motion.div>
+
+      {/* Image Section */}
+      <motion.div
+        className="w-full md:w-1/2 flex justify-center"
+        initial={{ x: 100, opacity: 0 }}
+        animate={{ x: 0, opacity: 1 }}
+        transition={{ duration: 1 }}
+      >
         <div className="relative">
           <div className="absolute inset-0 glow rounded-3xl"></div>
           <div className="bg-gradient-to-br from-purple-900/40 to-black p-1 rounded-3xl">
@@ -69,8 +86,8 @@ const Hero = () => {
             </div>
           </div>
         </div>
-      </div>
-    </div>
+      </motion.div>
+    </motion.section>
   );
 };
 
