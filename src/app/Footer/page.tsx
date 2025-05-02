@@ -27,6 +27,8 @@ const Footer = () => {
           </a>
           <a
             href="mailto:musungaretanaka@gmail.com"
+             target="_blank"
+           rel="noopener noreferrer"
             className="hover:text-gray-400"
           >
             Email

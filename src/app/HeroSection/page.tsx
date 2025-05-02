@@ -35,7 +35,9 @@ const Hero = () => {
         <div className="flex space-x-4">
           <button className="flex items-center space-x-2 bg-[#9333EA] hover:bg-purple-700 transition text-white px-6 py-3 rounded-full">
             <span>Resume</span>
-            <a href="https://drive.google.com/file/d/1A7rTR8Mf9xcXb61loFb3KwZtS0DP-2LF/view?usp=drive_link">
+            <a href="https://drive.google.com/file/d/1A7rTR8Mf9xcXb61loFb3KwZtS0DP-2LF/view?usp=drive_link"
+             target="_blank"
+             rel="noopener noreferrer">
             <HiDownload/>
             </a>
           
@@ -43,20 +45,34 @@ const Hero = () => {
           
           {/* Social icons */}
           <div className="flex space-x-3">
-            <a href="https://github.com/Tanaka878" className="flex items-center justify-center w-10 h-10 rounded-full border border-[#9333EA]   hover:text-white transition">
+            <a href="https://github.com/Tanaka878"
+             target="_blank"
+             rel="noopener noreferrer"
+             className="flex items-center justify-center w-10 h-10 rounded-full border border-[#9333EA]   hover:text-white transition">
               <span>
                 <FaGithub/>
               </span>
             </a>
-            <a href="https://www.linkedin.com/in/tanaka-musungare-26668a295/" className="flex items-center justify-center w-10 h-10 rounded-full border border-[#9333EA]   hover:text-white transition">
+            <a href="https://www.linkedin.com/in/tanaka-musungare-26668a295/"
+             target="_blank"
+              rel="noopener noreferrer"
+            
+            className="flex items-center justify-center w-10 h-10 rounded-full border border-[#9333EA]   hover:text-white transition">
               <span>
                 <FaLinkedin/>
               </span>
             </a>
-            <a href="" className="flex items-center justify-center w-10 h-10 rounded-full border border-[#9333EA]  hover:text-white transition">
+
+            <a href=""
+             target="_blank"
+             rel="noopener noreferrer"
+             className="flex items-center justify-center w-10 h-10 rounded-full border border-[#9333EA]  hover:text-white transition">
               <span>
-                <FaWhatsapp/>
+                <FaWhatsapp 
+                />
               </span>
+
+              
             </a>
           
           </div>
