@@ -92,7 +92,7 @@ const Hero = () => {
             <div className="bg-gradient-to-br from-purple-900/20 to-black/80 rounded-3xl overflow-hidden h-80 w-64 md:h-96 md:w-80">
               <div className="relative w-full h-full">
                 <Image 
-                  src="/Images/naruto.jpeg"
+                  src="/Images/tanaka.jpg"
                   alt="Profile Picture" 
                   fill
                   className="object-cover"
