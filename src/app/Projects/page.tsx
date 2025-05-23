@@ -31,10 +31,10 @@ const ProjectCard = ({ title, description, tags, image, github, liveDemo }: Proj
   return (
     <motion.div
       className="border border-white shadow-lg shadow-white/30 rounded-lg p-6 bg-dark-blue text-white"
-      whileHover={{ scale: 1.05 }} // Add hover effect
-      initial={{ opacity: 0, y: 50 }} // Initial animation state
-      animate={{ opacity: 1, y: 0 }} // Final  state
-      transition={{ duration: 0.5 }} //  duration
+      whileHover={{ scale: 1.05 }} 
+      initial={{ opacity: 0, y: 50 }} 
+      animate={{ opacity: 1, y: 0 }} 
+      transition={{ duration: 0.5 }} 
     >
       {/* Image */}
       <div className="relative w-full h-40 mb-4">
@@ -153,12 +153,12 @@ const Projects = () => {
           liveDemo="https://joinai-support-dashboard.vercel.app/"
         />
         <ProjectCard
-          title="My First Website"
-          description="A website that showcases my skills and projects I have worked on."
-          tags={["#HTML", "#CSS", "#UI/UX"]}
-          image="/Images/first website.png"
-          github="https://github.com/Tanaka878/MyPortfolio"
-          liveDemo="https://my-portfolio-smoky-xi-97.vercel.app/"
+          title="Herbalife"
+          description="A project I did for a client to showcase their products and services."
+          tags={["#Nextjs", "#tailwind", "#UI/UX"]}
+          image="/Images/herbalLife.png"
+          github="https://github.com/Tanaka878/HerbalClinic"
+          liveDemo="https://save-a-man.vercel.app/"
         />
         <ProjectCard
           title="Design Patterns"
