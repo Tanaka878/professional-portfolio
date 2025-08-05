@@ -123,11 +123,32 @@ const ProjectCard = ({ title, description, tags, image, github, liveDemo }: Proj
 
 const Projects = () => {
   const projects = [
+    
+    {
+      title: "Joinai Support Assistant",
+      description: "An AI-powered customer support assistant that automates ticket management and provides instant responses to user queries.",
+      tags: ["java", "nextjs", "mongodb", "spring-ai","vector-database"],
+      image: "/Images/customer-service-ai.webp",
+      github: "https://github.com/Tanaka878/SpringAI",
+      liveDemo: "https://joinai-support-assistant.vercel.app/"
+
+    },
+    {
+       
+      title: "Focus Flow --Still in development",
+      description: "A productivity application designed to enhance focus and time management through task tracking. It is Powered by Spring AI + OpenAI API. ",
+      tags: ["java", "nextjs", "mongodb", "spring-ai","OpenAI"],
+      image: "/Images/productivity.png",
+      github: "https://github.com/Tanaka878/Focus-Flow-Frontend",
+      liveDemo: "https://focus-flow-frontend-nine.vercel.app"
+
+    
+    },
     {
       title: "Community Forum",
       description: "A group chat application to connect people with shared interests, featuring real-time messaging and community management tools.",
       tags: ["java", "nextjs", "mongodb"],
-      image: "/Images/phone.png",
+      image: "/Images/chat-app.jpg",
       github: "https://github.com/Tanaka878/CommunityForumApp",
       liveDemo: "https://www.community-forum.co.zw/"
     },
@@ -151,7 +172,7 @@ const Projects = () => {
       title: "JoinAI Support System",
       description: "An intelligent customer support ticketing system powered by AI for automated responses and efficient ticket management.",
       tags: ["typescript", "spring-ai", "java", "ui/ux", "nextjs"],
-      image: "/Images/marketing.jpg",
+      image: "/Images/customer-support.avif",
       github: "https://github.com/Tanaka878/joinai-support-dashboard",
       liveDemo: "https://joinai-support-dashboard.vercel.app/"
     },
