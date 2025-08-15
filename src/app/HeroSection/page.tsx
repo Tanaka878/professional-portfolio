@@ -24,7 +24,7 @@ const Hero = () => {
         <p className="text-lg mb-2"> Tanaka Musungare</p>
         <h1 className="text-4xl md:text-5xl font-bold mb-6">
           <span className="text-[#9333EA]">An passionate</span><br/>
-          <span className="text-[#9333EA]">Software Developer</span>
+          <span className="text-[#9333EA]">Software Engineer</span>
         </h1>
         <p className="text-gray-400 mb-10 max-w-lg">
           I implement solutions from scratch that helps bridge
