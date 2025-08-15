@@ -144,6 +144,15 @@ const Projects = () => {
 
     
     },
+     
+    {
+      title: "Tanaka's AI Portfolio",
+      description: "An interactive AI portfolio that showcases my projects and skills, featuring AI-driven insights and personalized content.",
+      tags: ["typescript", "nextjs", "ui/ux","spring-ai","OpenAI","vector-database"],
+      image: "/Images/self.png",
+      github: "https://github.com/Tanaka878/professional-portfolio",
+      liveDemo: "https://tanaka-musungare.vercel.app/"
+    },
     {
       title: "Community Forum",
       description: "A group chat application to connect people with shared interests, featuring real-time messaging and community management tools.",
@@ -168,6 +177,7 @@ const Projects = () => {
       github: "https://github.com/Tanaka878/professional-portfolio",
       liveDemo: "https://tanaka-musungare.vercel.app/"
     },
+   
     {
       title: "JoinAI Support System",
       description: "An intelligent customer support ticketing system powered by AI for automated responses and efficient ticket management.",
