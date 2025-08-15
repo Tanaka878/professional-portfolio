@@ -151,7 +151,7 @@ const Projects = () => {
       tags: ["typescript", "nextjs", "ui/ux","spring-ai","OpenAI","vector-database"],
       image: "/Images/self.png",
       github: "https://github.com/Tanaka878/professional-portfolio",
-      liveDemo: "https://tanaka-musungare.vercel.app/"
+      liveDemo: "https://my-personal-ai-interface.vercel.app/"
     },
     {
       title: "Community Forum",
