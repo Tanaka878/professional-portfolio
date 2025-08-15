@@ -1,4 +1,3 @@
-import Contact from "./Contact/page";
 import Footer from "./Footer/page";
 import Hero from "./HeroSection/page";
 import NavBar from "./NavBar/page";
@@ -25,7 +24,6 @@ export default function Home() {
       <Testimonials/>
 
       {/**Contact Me */}
-      <Contact/>
 
       {/**Footer */}
       <Footer/>
